@@ -1,0 +1,77 @@
+2026-04-02 12:24:38,127 [src.preprocessing.stabilizer] INFO: VideoStabilizer initialized (window=30, max_features=200)
+2026-04-02 12:24:38,127 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100)
+2026-04-02 12:24:38,127 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:24:38,128 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:24:38,128 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100.0)
+2026-04-02 12:24:38,128 [src.preprocessing.night_mode] INFO: NightModeProcessor initialized (threshold=80, gamma=1.8)
+2026-04-02 12:24:38,134 [src.detection.roi_manager] INFO: ROI loaded from config/settings.yaml: 4 points
+2026-04-02 12:24:38,135 [src.detection.motion_filter] INFO: MotionFilter initialized (history=500, varThreshold=16)
+2026-04-02 12:24:38,213 [src.detection.vehicle_detector] INFO: YOLOv8 model loaded from yolov8n.pt
+2026-04-02 12:24:39,783 [src.anpr.plate_detector] WARNING: Failed to load plate model: [Errno 2] No such file or directory: 'models\\plate_detector.pt'. Using fallback.
+2026-04-02 12:24:39,784 [src.anpr.plate_dip] INFO: PlateDIP initialized (target_h=64, pad=10)
+2026-04-02 12:24:43,563 [src.anpr.ocr_engine] INFO: EasyOCR initialized (gpu=False)
+2026-04-02 12:24:43,694 [src.violation.deduplicator] INFO: Deduplicator initialized (cooldown=300s)
+2026-04-02 12:24:43,697 [src.violation.logger] INFO: ViolationLogger initialized (db=data/violations/violations.db)
+2026-04-02 12:24:43,699 [src.reporting.pdf_generator] INFO: FineReportGenerator initialized (output=data/violations/reports)
+2026-04-02 12:24:43,699 [src.reporting.notifier] INFO: Twilio client initialized
+2026-04-02 12:24:43,700 [src.reporting.notifier] INFO: Notifier initialized
+2026-04-02 12:24:43,700 [__main__] INFO: ============================================================
+2026-04-02 12:24:43,700 [__main__] INFO: Flyover Enforcement Pipeline initialized
+2026-04-02 12:24:43,701 [__main__] INFO: Config: config/settings.yaml
+2026-04-02 12:24:43,701 [__main__] INFO: Processing every 5th frame
+2026-04-02 12:24:43,701 [__main__] INFO: ============================================================
+2026-04-02 12:24:43,729 [__main__] ERROR: Failed to open video: data/raw_footage/test.mp4
+2026-04-02 12:49:22,035 [src.preprocessing.stabilizer] INFO: VideoStabilizer initialized (window=30, max_features=200)
+2026-04-02 12:49:22,035 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100)
+2026-04-02 12:49:22,036 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:49:22,036 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:49:22,036 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100.0)
+2026-04-02 12:49:22,036 [src.preprocessing.night_mode] INFO: NightModeProcessor initialized (threshold=80, gamma=1.8)
+2026-04-02 12:49:22,042 [src.detection.roi_manager] INFO: ROI loaded from C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\config/settings.yaml: 4 points
+2026-04-02 12:49:22,044 [src.detection.motion_filter] INFO: MotionFilter initialized (history=500, varThreshold=16)
+2026-04-02 12:49:22,184 [src.detection.vehicle_detector] INFO: YOLOv8 model loaded from yolov8n.pt
+2026-04-02 12:49:23,804 [src.anpr.plate_detector] WARNING: Failed to load plate model: [Errno 2] No such file or directory: 'models\\plate_detector.pt'. Using fallback.
+2026-04-02 12:49:23,804 [src.anpr.plate_dip] INFO: PlateDIP initialized (target_h=64, pad=10)
+2026-04-02 12:49:26,477 [src.anpr.ocr_engine] INFO: EasyOCR initialized (gpu=False)
+2026-04-02 12:49:26,483 [src.violation.deduplicator] INFO: Deduplicator initialized (cooldown=300s)
+2026-04-02 12:49:26,486 [src.violation.logger] INFO: ViolationLogger initialized (db=C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/violations/violations.db)
+2026-04-02 12:49:26,487 [src.reporting.pdf_generator] INFO: FineReportGenerator initialized (output=data/violations/reports)
+2026-04-02 12:49:26,488 [src.reporting.notifier] INFO: Twilio client initialized
+2026-04-02 12:49:26,488 [src.reporting.notifier] INFO: Notifier initialized
+2026-04-02 12:49:26,488 [__main__] INFO: ============================================================
+2026-04-02 12:49:26,488 [__main__] INFO: Flyover Enforcement Pipeline initialized
+2026-04-02 12:49:26,488 [__main__] INFO: Config: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\config/settings.yaml
+2026-04-02 12:49:26,489 [__main__] INFO: Processing every 5th frame
+2026-04-02 12:49:26,489 [__main__] INFO: ============================================================
+2026-04-02 12:49:26,489 [__main__] INFO: Source  : C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/raw_footage/test.mp4
+2026-04-02 12:49:26,489 [__main__] INFO: Output  : None
+2026-04-02 12:49:26,489 [__main__] INFO: Display : False
+2026-04-02 12:49:26,489 [__main__] ERROR: Video file not found: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/raw_footage/test.mp4
+Place your footage in: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data\raw_footage
+2026-04-02 12:50:26,978 [src.preprocessing.stabilizer] INFO: VideoStabilizer initialized (window=30, max_features=200)
+2026-04-02 12:50:26,978 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100)
+2026-04-02 12:50:26,978 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:50:26,979 [src.preprocessing.enhancement] INFO: Enhancer initialized
+2026-04-02 12:50:26,979 [src.preprocessing.noise_removal] INFO: NoiseRemover initialized (laplacian_threshold=100.0)
+2026-04-02 12:50:26,979 [src.preprocessing.night_mode] INFO: NightModeProcessor initialized (threshold=80, gamma=1.8)
+2026-04-02 12:50:26,987 [src.detection.roi_manager] INFO: ROI loaded from C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\config/settings.yaml: 4 points
+2026-04-02 12:50:26,987 [src.detection.motion_filter] INFO: MotionFilter initialized (history=500, varThreshold=16)
+2026-04-02 12:50:27,070 [src.detection.vehicle_detector] INFO: YOLOv8 model loaded from yolov8n.pt
+2026-04-02 12:50:28,425 [src.anpr.plate_detector] WARNING: Failed to load plate model: [Errno 2] No such file or directory: 'models\\plate_detector.pt'. Using fallback.
+2026-04-02 12:50:28,425 [src.anpr.plate_dip] INFO: PlateDIP initialized (target_h=64, pad=10)
+2026-04-02 12:50:30,962 [src.anpr.ocr_engine] INFO: EasyOCR initialized (gpu=False)
+2026-04-02 12:50:30,966 [src.violation.deduplicator] INFO: Deduplicator initialized (cooldown=300s)
+2026-04-02 12:50:30,968 [src.violation.logger] INFO: ViolationLogger initialized (db=C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/violations/violations.db)
+2026-04-02 12:50:30,969 [src.reporting.pdf_generator] INFO: FineReportGenerator initialized (output=data/violations/reports)
+2026-04-02 12:50:30,969 [src.reporting.notifier] INFO: Twilio client initialized
+2026-04-02 12:50:30,969 [src.reporting.notifier] INFO: Notifier initialized
+2026-04-02 12:50:30,969 [__main__] INFO: ============================================================
+2026-04-02 12:50:30,969 [__main__] INFO: Flyover Enforcement Pipeline initialized
+2026-04-02 12:50:30,970 [__main__] INFO: Config: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\config/settings.yaml
+2026-04-02 12:50:30,970 [__main__] INFO: Processing every 5th frame
+2026-04-02 12:50:30,970 [__main__] INFO: ============================================================
+2026-04-02 12:50:30,970 [__main__] INFO: Source  : C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/raw_footage/test.mp4
+2026-04-02 12:50:30,970 [__main__] INFO: Output  : None
+2026-04-02 12:50:30,970 [__main__] INFO: Display : False
+2026-04-02 12:50:30,970 [__main__] ERROR: Video file not found: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data/raw_footage/test.mp4
+Place your footage in: C:\Users\pjd18\OneDrive\Desktop\PBL-2\flyover_enforcement\data\raw_footage

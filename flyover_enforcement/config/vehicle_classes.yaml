@@ -1,0 +1,42 @@
+# Vehicle Classification Configuration
+# Based on COCO dataset class IDs used in YOLOv8
+
+# Two-wheelers: RESTRICTED on flyover
+restricted:
+  - class_id: 3
+    name: "motorcycle"
+    label: "Two-Wheeler (Motorcycle)"
+  - class_id: 1
+    name: "bicycle"
+    label: "Two-Wheeler (Bicycle)"
+
+# Vehicles ALLOWED on flyover
+allowed:
+  - class_id: 2
+    name: "car"
+    label: "Car"
+  - class_id: 5
+    name: "bus"
+    label: "Bus"
+  - class_id: 7
+    name: "truck"
+    label: "Truck"
+
+# COCO class ID mapping (for reference)
+coco_mapping:
+  0: "person"
+  1: "bicycle"
+  2: "car"
+  3: "motorcycle"
+  4: "airplane"
+  5: "bus"
+  6: "train"
+  7: "truck"
+
+# Two-wheeler sub-types for reporting
+two_wheeler_types:
+  - "motorcycle"
+  - "scooter"
+  - "moped"
+  - "bicycle"
+  - "e-bike"

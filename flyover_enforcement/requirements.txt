@@ -1,0 +1,39 @@
+# Flyover Enforcement System - Dependencies
+# Python 3.10+ required
+
+# Core Computer Vision & DIP
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Deep Learning - Vehicle Detection
+ultralytics>=8.0.0
+
+# OCR - Number Plate Recognition (PaddlePaddle has no Python 3.14 wheel)
+easyocr>=1.7.0
+
+# PDF Report Generation
+reportlab>=4.0.0
+
+# QR Code Generation
+qrcode[pil]>=7.4
+python-barcode>=0.15.1
+
+# Dashboard
+streamlit>=1.28.0
+pandas>=2.0.0
+
+# Notifications
+twilio>=8.0.0
+
+# Configuration
+PyYAML>=6.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Testing
+pytest>=7.4.0
+
+# Utilities
+tqdm>=4.65.0

@@ -1,0 +1,57 @@
+# Flyover Enforcement System - Configuration
+# Location: Kerala, India
+
+camera:
+  source: "data/raw_footage/test.mp4"   # or rtsp:// URL for live CCTV
+  fps_process: 5                         # process every Nth frame
+  resolution:
+    width: 1280
+    height: 720
+
+roi:
+  entry_polygon: [[100,400],[500,400],[520,600],[80,600]]
+  color: [0, 255, 0]         # green overlay
+  thickness: 2
+  alpha: 0.3                 # overlay transparency
+
+thresholds:
+  detection_confidence: 0.45
+  iou_threshold: 0.5
+  ocr_confidence: 0.70
+  night_brightness_threshold: 80
+  noise_laplacian_threshold: 100
+  violation_cooldown_seconds: 300
+
+fine:
+  amount: 500
+  currency: "INR"
+  rule: "Motor Vehicles Act Section 119"
+  location: "Palarivattom Flyover, Kochi, Kerala"
+  department: "Kerala Motor Vehicles Department"
+
+notification:
+  email:
+    sender: "enforcement@kerala.gov.in"
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    smtp_user: "enforcement@kerala.gov.in"
+    smtp_password: "YOUR_APP_PASSWORD"
+  sms:
+    twilio_sid: "YOUR_SID"
+    twilio_token: "YOUR_TOKEN"
+    from_number: "+1XXXXXXXXXX"
+
+database:
+  path: "data/violations/violations.db"
+
+models:
+  vehicle_detector: "yolov8n.pt"
+  plate_detector: "models/plate_detector.pt"
+
+stabilizer:
+  window_size: 30
+  max_features: 200
+
+logging:
+  level: "INFO"
+  log_file: "data/violations/system.log"
